@@ -7,7 +7,7 @@ using ShoppingCart.Interfaces;
 
 namespace ShoppingCart.Models
 {
-    internal class Cart : ICart
+    public class Cart : ICart // Changed from internal to public
     {
         public long Id { get; set; }
         public List<Product> Products { get; set; }
